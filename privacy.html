@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Unified-MCP-MailApi</title>
+<meta name="description" content="How Unified-MCP-MailApi handles your mail, calendar and account data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <nav><a href="./">Unified-MCP-MailApi</a><a href="privacy.html" aria-current="page">Privacy</a><a href="terms.html">Terms</a><a href="../">Daniel Jonathan</a></nav>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective 18 November 2026</p>
+
+  <p>Unified-MCP-MailApi ("the app") connects an AI assistant you choose to the mailboxes and calendars you link. This policy explains
+  what data the app accesses, what it does with it, and what it never does.</p>
+
+  <h2>Data the app accesses</h2>
+  <ul>
+    <li><b>Google user data:</b> with your permission, Gmail messages, threads and attachments (<code>gmail.readonly</code>), and calendar
+    events (<code>calendar.readonly</code>). If you link an account with full access, it can also create drafts, send mail you confirm,
+    change message labels such as read/unread or archived, and create calendar events.</li>
+    <li><b>Microsoft user data:</b> the equivalent mail and calendar data through Microsoft Graph, plus your basic profile (name and email address).</li>
+    <li><b>Account identifiers:</b> the email address of each linked account, and the access you granted.</li>
+  </ul>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>Mail and calendar data is fetched only when you, through your AI assistant, ask for it, and is passed only to that assistant
+    to answer your request.</li>
+    <li>The app does not store message contents. It stores only what it needs to stay connected: the OAuth refresh token for each linked account,
+    kept in a file only you can read on your own computer, or encrypted at rest when you run it on your own server.</li>
+    <li>The app's activity log records which action ran and when, never message contents, subjects or addresses.</li>
+  </ul>
+
+  <h2>What the app never does</h2>
+  <ul>
+    <li>It does not sell, rent or share your data with anyone.</li>
+    <li>It does not use your data for advertising, and it does not use it to train AI models.</li>
+    <li>No person reads your mail. The app is operated by its user, not by a third party.</li>
+    <li>It does not send email or create events without your explicit confirmation.</li>
+  </ul>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p class="note">Unified-MCP-MailApi's use and transfer to any other app of information received from Google APIs will adhere to the
+  <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+  including the Limited Use requirements.</p>
+
+  <h2>Your AI assistant</h2>
+  <p>Data you ask about is shown to the AI assistant you connected (for example Claude or ChatGPT). That assistant's own privacy policy
+  governs how it handles the conversation.</p>
+
+  <h2>Removing access and deleting data</h2>
+  <ul>
+    <li>Use the app's <code>unlink_account</code> action to remove one account and its stored token, or <code>delete_my_data</code> to remove everything.</li>
+    <li>You can also revoke access at any time in your <a href="https://myaccount.google.com/permissions">Google account</a> or
+    <a href="https://account.live.com/consent/Manage">Microsoft account</a>; the app then loses access immediately.</li>
+  </ul>
+
+  <h2>Security</h2>
+  <p>All connections to Google and Microsoft use HTTPS. Refresh tokens are encrypted at rest on servers, and access is limited to the
+  permissions you granted when linking each account.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the new version will be published on this page with a new effective date. Questions: contact
+  <a href="https://github.com/imdj360">Daniel Jonathan on GitHub</a> or use the support email shown on the Google sign-in screen.</p>
+
+  <footer><a href="./">Unified-MCP-MailApi</a> · <a href="terms.html">Terms of service</a></footer>
+</main>
+</body>
+</html>
